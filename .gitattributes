@@ -1,0 +1,36 @@
+# Exclude from GitHub archive downloads (ZIP)
+# These files won't be included when downloading code via the Download button
+
+# Dependencies - users should run npm install
+node_modules/ export-ignore
+
+# Git internals
+.git/ export-ignore
+
+# Environment files - never include secrets
+.env export-ignore
+.env.local export-ignore
+.env.*.local export-ignore
+
+# Lock files - regenerated on install
+package-lock.json export-ignore
+yarn.lock export-ignore
+pnpm-lock.yaml export-ignore
+
+# Build artifacts - regenerated on build
+.next/ export-ignore
+dist/ export-ignore
+build/ export-ignore
+out/ export-ignore
+
+# Cache and temp files
+.turbo/ export-ignore
+.vercel/ export-ignore
+.cache/ export-ignore
+*.log export-ignore
+
+# IDE files
+.idea/ export-ignore
+.vscode/ export-ignore
+*.swp export-ignore
+*.swo export-ignore
